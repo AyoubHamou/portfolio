@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Ayoub Hamou</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Ayoub Hamou</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/myprofile-pic.png" alt="Ayoub Hamou profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Ayoub Hamou</h1>
+            <p class="section__text__p2">Software Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/cv_ayoubhamou.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="my linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/ahamou/'">
+                <img src="./assets/github.png" alt="my github profile" class="icon" onclick="location.href='https://github.com/AyoubHamou'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">Education Background</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img
+                    src="./assets/cluster.png"
+                    alt="cluster picture"
+                    class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img
+                            src="./assets/experience.png"
+                            alt="Degree icon"
+                            class="icon"
+                        />
+                        <h3>Academic Credentials</h3>
+                        <p>Licence Degree in<br />Physics and Chemistry</p>
+                    </div>
+                    <div class="details-container">
+                        <img
+                            src="./assets/1337.jpg"
+                            alt="School icon"
+                            class="icon"
+                        />
+                        <h3>Current Studies</h3>
+                        <p>IT training<br />1337 School</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Transitioning from a strong scientific background to the dynamic world of IT, I am currently expanding my knowledge and skills at 1337 School. My educational journey reflects a commitment to continuous learning and intellectual growth. Through rigorous academic training, I have developed strong analytical thinking and problem-solving abilities that drive my personal and professional development.                    </p>
+                </div>
+            </div>
+        </div>
+        <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="experience">
+        <div class="about-containers">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Programming Languages</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/c.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>C</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/cpp.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>C++</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/java.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>Java</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/python.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>Python</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/js.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        
+            <div class="details-container">
+                <h2 class="experience-sub-title">Web Technologies</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/html.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/css.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/django.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>Django</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/spring.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>Spring Boot</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        
+            <div class="details-container">
+                <h2 class="experience-sub-title">DevOps & Tools</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/docker.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>Docker</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/docker-compose.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>Docker Compose</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#projects'"
+        />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/inception.png"
+                  alt="Inception 42"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Inception</h2>
+                </p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/irc_feature.png"
+                  alt="ft_irc 42"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">IRC Server</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/pong.png"
+                  alt="transcendence 42"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">transcendence</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:ayoubhamou1337@gmail.com">ayoubhamou1337@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/ahamou/">LinkedIn</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/callme.png"
+              alt="call icon"
+              class="icon contact-icon"
+            />
+            <p><a href="tel:+212604814082">+212604814082</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Ayoub Hamou. All Rights Reserved.</p>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>
