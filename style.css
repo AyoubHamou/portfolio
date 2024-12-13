@@ -368,12 +368,12 @@ article .icon {
   
   .project-img {
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    width: 400px;
+    height: 300px;
   }
   
   .project-title {
-    margin: 1rem;
+    margin: 1.5rem;
     color: black;
   }
   
